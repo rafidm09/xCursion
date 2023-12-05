@@ -1,0 +1,468 @@
+header{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+#body-title{
+  margin-left: 50px;
+}
+
+h6{
+  font-size: 12pt;
+  font-weight: lighter;
+}
+
+.active{
+  font-weight: bold;
+}
+
+button{
+  border: none;
+  background-color: black;
+  padding: 15px 30px;
+}
+
+button a{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.flights-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+table{
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
+
+
+tr{
+  border: 1px solid black;
+  /* background-color: red; */
+}
+
+td{
+  padding: 5px;
+}
+
+.flight-container > *{
+  padding: 20px;
+  align-items: center;
+}
+
+.book-btn{
+  color: white;
+  padding: 5px 7px;
+  margin: 0 5px;
+}
+
+.flight-header{
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid black;
+  
+}
+
+.flight-header > *{
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.seats-grid{
+  display: grid;
+  gap: 10px;
+}
+
+.seat {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.seat-btn{
+  background-color: #6ff36f;
+  margin: 1px;
+  text-align: center;
+  padding: 10px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+.seat-btn.selected {
+  background-color: #ff0;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin: 0;
+  padding: 0 50px;
+}
+
+
+.flight-info{
+  display: flex;
+
+}
+
+.flight-info h3{
+  margin: 0 15px;
+}
+
+.buyer-container{
+  text-align: center;
+}
+
+.ticket-container{
+  border: 1px solid black;
+  width: 60%;
+  padding: 15px;
+  text-align: left;
+  margin: 30px auto;
+}
+
+.price-container{
+  margin-left: 20px;
+}
+
+.price-container h6{
+  margin: 20px 0 10px 0;
+  font-size: 10pt;
+}
+
+.price-container h4{
+  margin: 10px 0;
+}
+
+.buy-btn{
+  color: white;
+  margin-left: 20px;
+}
+
+.flight-name-h2{
+  margin: 0;
+  margin-left: 15px;
+}
+
+#name{
+  margin: 0;
+}
+
+.seat-btn.middle-seat:nth-child(odd) {
+  margin-right: 20px;
+}
+
+#a-to-b{
+  margin: 10px 0 10px 15px;
+
+}
+
+.small{
+  margin: 0;
+  font-size: 5pt;
+}
+
+#scrollable{
+  overflow-y: scroll;
+  max-height: 100px;
+}
+
+.manage-flights-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.manage-flights-form label {
+  margin-bottom: 10px;
+}
+
+.manage-flights-form input {
+  width: 100%;
+  padding: 10px;
+}
+
+.manage-flights-form button {
+  padding: 10px;
+  margin: 20px 50px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#s-btn{
+  color: white;
+}
+
+.switch {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  width: 40px; /* Adjusted size */
+  height: 22px; /* Adjusted size */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px; 
+  width: 18px; 
+  left: 2px; 
+  bottom: 2px; 
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px); 
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  /* Add other styles as needed */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 999;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.popup label {
+  margin-bottom: 10px;
+}
+
+.popup input {
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.popup button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.split{
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 10pt;
+  cursor: pointer;
+}
+
+.seat-taken {
+  background-color: red;
+}
+
+
+
+.ticket-box-full{
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 150px;
+  padding: 20px;
+}
+
+.cancel-btn{
+  color:white;
+  margin: 0;
+  height: fit-content;
+  padding: 20px 40px;
+}
+
+.action-section{
+  /* height: 100%;
+  border-left: 1px solid black; */
+}
+
+.ticket-box{
+  padding: 0 50px;
+}
+
+.ticket-box div{
+  display: flex;
+}
+
+.ticket-box div h3 {
+  margin: 0 40px 0 0;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  height: 50px;
+  margin: 50px;
+  border: 1px solid black;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: aquamarine;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 50px 250px;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.action.selected {
+  background-color: lightgrey;
+}
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 200px;
+  width: 300px;
+  gap: 10px;
+}
+
+.myForm label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+
+.myForm input, .myForm select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
