@@ -1,4 +1,4 @@
-# 480TermProject
+#xCursion
 
 # RUN INSTRUCTIONS
 
